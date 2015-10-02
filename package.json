@@ -1,0 +1,27 @@
+{
+  "name": "pumoonkust",
+  "version": "1.0.0",
+  "description": "Pumoonkust.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talentedunicorn/pumoonkust.git"
+  },
+  "keywords": [
+    "pumoonkust"
+  ],
+  "author": "Talented Unicorn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/talentedunicorn/pumoonkust/issues"
+  },
+  "homepage": "https://github.com/talentedunicorn/pumoonkust#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-ruby-sass": "^2.0.4",
+    "gulp-sass": "^2.0.4"
+  }
+}
