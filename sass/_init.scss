@@ -35,3 +35,29 @@ $secondary-font-family: 'Montserrat', sans-serif;
 
 // Font sizes
 $base-font-size: 16px;
+
+// Screen sizes
+$screen-small: 480px; 
+$screen-medium: 960px;
+$screen-large: 1200px;
+
+// -- Mixins
+
+// - respond-to($size)
+@mixin respond-to($size) {
+	@if $size == small {
+		@media only screen and (max-width: $screen-small) { @content; }
+	}
+
+	@if $size == medium {
+		@media only screen and (min-width: $screen-small) { @content; }
+	}
+	
+	@if $size == medium-only {
+		@media only screen and (min-width: $screen-small + 1) and (max-width: $screen-large - 1) { @content; }
+	}
+
+	@if $size == large {
+		@media only screen and (min-width: $screen-large) { @content; }
+	}
+}
