@@ -1,6 +1,24 @@
-// Colors
+// Susy
+@import "../bower_components/susy/sass/susy";
+$susy : (
+	columns: 12,
+	gutter: .25,
+	container: 1200px,
+	container-position: center,
+	global-box-sizing: border-box,
+	
+	debug: (
+		image: show,
+		output: overlay,
+		toggle: top,
+	)
+);
 
+@include global-box-sizing;
 
+.container {
+	@include container;
+}
 
 // Fonts
 
