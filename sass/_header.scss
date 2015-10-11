@@ -1,7 +1,11 @@
 .header {
-	background: url(../images/jelly.jpg) no-repeat center 30%/cover;
+	background: url(../images/jelly.jpg) no-repeat center -50px/cover;
 	overflow: auto;
 	height: 400px;
+	
+	@include respond-to(medium) {
+		background-position: center 30%;
+	}
 }
 
 .logo-wrap {
@@ -27,4 +31,9 @@
 		}
 
 	}
+}
+
+.header-text {
+	color: $white;
+	text-align: center;
 }
