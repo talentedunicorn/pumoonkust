@@ -20,9 +20,16 @@ $susy : (
 	@include container;
 }
 
-// Fonts
 
+// Colors
+$black: #333;
+$white: #f4f4fa;
+
+
+// Fonts
+$base-font-family: 'Roboto Mono', monospace;
+$secondary-font-family: 'Montserrat', sans-serif;
 
 
 // Font sizes
-
+$base-font-size: 16px;
