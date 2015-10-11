@@ -1,7 +1,7 @@
 .header {
-	background: url(../images/jelly.jpg) no-repeat center/cover;
+	background: url(../images/jelly.jpg) no-repeat center 30%/cover;
 	overflow: auto;
-	height: 300px;
+	height: 400px;
 }
 
 .logo-wrap {
@@ -14,10 +14,17 @@
 	display: block;
 
 	.logo-path-inner {
-
+		fill: $blue;
 	}
 
 	.logo-path-outer {
+		fill: $white;
+	}
+
+	&:hover {
+		.logo-path-inner {
+			fill: $black;
+		}
 
 	}
 }
