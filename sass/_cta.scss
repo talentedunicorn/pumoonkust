@@ -1,0 +1,34 @@
+.cta {
+	font-family: $secondary-font-family;
+	padding: 0px em(20px);
+
+	.callout, 
+	.form {
+		width: 100%;
+		padding: em(50px) 0px;
+	}
+
+	@include respond-to(medium) {
+		.callout {
+			@include span(4);
+		}
+
+		.form {
+			@include span(8 last);
+		}
+	}
+
+	.callout {
+		text-align: center;
+
+		.callout-header {
+			font-size: 1em;
+			font-weight: bold;
+		}
+
+		.callout-text {
+			font-size: 1.3em;
+		}
+	}
+
+}
