@@ -5,6 +5,7 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
+var connect = require('gulp-connect');
 
 gulp.task('sass', function() {
 	var conf = {
@@ -16,11 +17,26 @@ gulp.task('sass', function() {
 		.pipe(gulp.dest('./css'));
 });
 
+// Connect 
+gulp.task('connect', function() {
+	connect.server({
+		root: './',
+		livereload: true,
+	});
+});
+
+// Html
+gulp.task('html', function() {
+	gulp.src('./*.html')
+		.pipe(connect.reload());
+});
+
 // Watch
-gulp.task('sass:watch', ['sass'], function() {
+gulp.task('watch', ['sass'], function() {
 	gulp.watch('./sass/**/*.scss', ['sass']);
+	gulp.watch(['./*.html'], ['html']);
 });
 
 // Default
-gulp.task('default', function() {
+gulp.task('default', ['connect', 'watch'], function() {
 });
