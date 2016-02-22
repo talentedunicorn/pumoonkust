@@ -1,0 +1,5 @@
+css/styles.css:sass/styles.scss
+css/styles.css:sass/_init.scss
+css/styles.css:sass/_type.scss
+css/styles.css:sass/_header.scss
+css/styles.css:sass/_cta.scss
