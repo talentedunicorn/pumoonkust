@@ -1,5 +1,5 @@
 .header {
-	background: url(../images/jelly.jpg) no-repeat center center/cover;
+	/* background: url(../images/src/stay_tuned.jpg) no-repeat center center/cover; */
 	overflow: auto;
 	position: absolute;
 	top: 0;
@@ -9,6 +9,49 @@
 	
 	@include respond-to(medium) {
 		background-position: center 30%;
+	}
+
+}
+
+.stay-tuned {
+	position: relative;
+
+	.header-text {
+		position: absolute;
+		width: 32%;
+		top: 40%;
+		left: 50%;
+		margin-left: -16%;
+
+		p {
+			text-align: center;
+			color: $grey;
+
+			a {
+				text-decoration: underline;
+			}
+		}
+
+		@media screen and (max-width: 530px) {
+			font-size: 80%;
+		}
+		
+		@media screen and (max-width: 390px) {
+			font-size: 60%;
+		}
+
+		@media screen and (max-width: 270px) {
+			top: 100%;
+			left: 0px;
+			width: 100%;
+			margin: auto;
+		}
+	}
+
+	.stay-tuned_img {
+		display: block;
+		max-width: 100%;
+		margin: auto;
 	}
 }
 
@@ -22,22 +65,15 @@
 	display: block;
 
 	.logo-path-inner {
-		fill: $blue;
+		fill: $green;
 	}
 
 	.logo-path-outer {
-		fill: $white;
+		fill: $blue;
 	}
 
 	&:hover {
-		.logo-path-inner {
-			fill: $black;
-		}
 
 	}
 }
 
-.header-text {
-	color: $white;
-	text-align: center;
-}
