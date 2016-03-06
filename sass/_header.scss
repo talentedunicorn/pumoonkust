@@ -14,14 +14,8 @@
 }
 
 .stay-tuned {
-	position: relative;
 
 	.header-text {
-		position: absolute;
-		width: 32%;
-		top: 40%;
-		left: 50%;
-		margin-left: -16%;
 
 		p {
 			text-align: center;
@@ -32,20 +26,6 @@
 			}
 		}
 
-		@media screen and (max-width: 530px) {
-			font-size: 80%;
-		}
-		
-		@media screen and (max-width: 390px) {
-			font-size: 60%;
-		}
-
-		@media screen and (max-width: 270px) {
-			top: 100%;
-			left: 0px;
-			width: 100%;
-			margin: auto;
-		}
 	}
 
 	.stay-tuned_img {
